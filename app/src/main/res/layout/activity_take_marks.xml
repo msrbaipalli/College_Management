@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="college.management.TakeMarks"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Roll Number"
+        android:textColor="#060606"
+        android:textSize="20dp"
+        android:padding="16dp" />
+
+    <Spinner
+        android:id="@+id/marksRollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/rollno_array"
+        android:prompt="@string/select"
+        android:layout_margin="10dp" />
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" android:background="#ffffff">
+    <!-- Row 1 with single column -->
+
+
+    <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#607D8B">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="SUBJECT"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="MARKS"
+                android:textColor="#ffffff"
+
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Management Science"
+                android:textColor="#0a0000"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+
+                android:inputType="number"
+                android:id="@+id/sub1" />
+
+
+        </TableRow>
+
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Semantic Web &amp; Social Networks"
+                android:textColor="#0a0000"
+                android:textSize="16dp" />
+
+           <EditText
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+
+
+               android:inputType="number"
+               android:id="@+id/sub2" />
+
+
+        </TableRow>
+
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Adhoc &amp; Sensors Networks"
+                android:textColor="#0a0000"
+                android:textSize="16dp" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:inputType="number"
+                android:id="@+id/sub3" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/teacher"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:onClick="MarksSubmitted"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,278 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#120297e3">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".LoginActivity"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:orientation="vertical"
+            android:background="#de257680">
+
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/pro2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="AMAN SHAH"
+                android:id="@+id/studentName"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="CSE IV - I SEM"
+                android:id="@+id/studentBranch"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:layout_below="@+id/studentName"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="  12R01A0561"
+                android:id="@+id/studentRollno"
+                android:textColor="#ffffffff"
+                android:textStyle="bold"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_below="@+id/studentBranch"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:padding="20dp"
+            android:layout_weight="0.09"
+            android:background="#120297e3">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MID-II"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#2E7D32"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/mid" />
+
+            <TableLayout android:background="#000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#455A64"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="SUBJECT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="MARKS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="160dp"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <TableLayout android:background="#000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Management Science"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:id="@+id/s1b" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Semantic Web &amp; Social Networks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:id="@+id/s2b" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Adhoc &amp; Sensors Networks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:id="@+id/s3b" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#EF5350"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="TOTAL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fefafa"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#fdfafa"
+                        android:textStyle="bold"
+                        android:id="@+id/ttlb" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#795548"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="PERCENT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fdfbfb"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="70.67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#fbf9f9"
+                        android:textStyle="bold"
+                        android:id="@+id/perb" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

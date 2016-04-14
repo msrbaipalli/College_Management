@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="#120297e3">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="25dp"
+
+        tools:context=".LoginActivity"
+        >
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Year"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/marksYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/year_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Semester"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/marksSem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sem_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Branch"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/marksBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/branch_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Section"
+        android:textColor="#060606"
+        android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/marksSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/country_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Mid Term"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/marksMid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/mid_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Time Period"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+
+        <Spinner
+
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select2"
+            android:layout_margin="10dp" />-->
+
+
+        <Button
+
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_label"
+            android:background="@drawable/teacher"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:onClick="MarksSubmit"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

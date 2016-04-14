@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e3e3e3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:id="@+id/calendar"
+
+            android:layout_margin="10dp"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="#039BE5"
+        android:padding="10dp"
+        >
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRESENT"
+            android:id="@+id/radioButton1"
+            android:checked="true"
+            android:buttonTint="@color/darkgreen"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABSENT"
+            android:id="@+id/radioButton2"
+            android:checked="true"
+            android:buttonTint="@color/red"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO CLASS"
+            android:id="@+id/radioButton3"
+            android:checked="true"
+            android:buttonTint="@color/yellow"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Attendance : 75%"
+            android:id="@+id/textView5"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#01579B"
+            android:padding="5dp"
+            android:gravity="center"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

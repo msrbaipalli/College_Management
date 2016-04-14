@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:background="#120297e3">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="25dp"
+
+    tools:context=".LoginActivity"
+  >
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Year"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/attendYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/year_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Semester"
+        android:textColor="#060606"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/marksSem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sem_array"
+        android:prompt="@string/select"
+        android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Branch"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/attendBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/branch_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Section"
+            android:textColor="#060606"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/attendSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/country_array"
+            android:prompt="@string/select"
+            android:layout_margin="10dp" />
+
+
+    <Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Change Date"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/student"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#200397"
+        />
+
+    <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+
+        <Button
+
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_label"
+            android:background="@drawable/teacher"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:onClick="AttendanceSubmit"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

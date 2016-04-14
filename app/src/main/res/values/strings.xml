@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">College Management</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_student_login">StudentLogin</string>
+    <string name="title_activity_teacher_login">TeacherLogin</string>
+    <string name="title_activity_studentpro">StudentproA</string>
+    <string name="title_activity_student_attendance">StudentAttendance</string>
+
+
+    <string name="select">Choose a country</string>
+    <string name="select2">Choose an item</string>
+    <string name="button_label">Submit</string>
+
+
+    <string-array name="classP_array">
+        <item>Class 1</item>
+        <item>Class 2</item>
+        <item>Class 3</item>
+        <item>Class 4</item>
+        <item>Class 5</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+
+    </string-array>
+
+
+    <string-array name="year_array">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+
+    </string-array>
+
+
+    <string-array name="sem_array">
+        <item>I</item>
+        <item>II</item>
+
+    </string-array>
+
+    <string-array name="branch_array">
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>CIVIL</item>
+        <item>MECH</item>
+
+    </string-array>
+
+    <string-array name="country_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+
+    <string-array name="mid_array">
+        <item>I</item>
+        <item>II</item>
+
+    </string-array>
+
+
+    <string-array name="rollno_array">
+        <item>12R01A0561</item>
+        <item>12R01A0563</item>
+        <item>12R01A0593</item>
+        <item>12R01A05A3</item>
+        <item>12R01A05A7</item>
+
+
+    </string-array>
+
+
+</resources>

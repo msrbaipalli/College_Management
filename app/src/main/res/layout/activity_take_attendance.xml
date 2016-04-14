@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#120297e3">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="college.management.TakeAttendance"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Time Period"
+        android:textColor="#060606"
+        android:textSize="20dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp" />
+
+
+    <Spinner
+
+        android:id="@+id/attendTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/classP_array"
+        android:prompt="@string/select2"
+        android:layout_margin="10dp" />
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:stretchColumns="*"
+        android:padding="5dp">
+        <!-- Row 1 with single column -->
+
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1. 12R01A0561"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a1"
+                android:onClick="ab1"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p1"
+                android:onClick="pr1"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="2. 12R01A0562"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a2"
+                android:onClick="ab2"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p2"
+                android:onClick="pr2"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="3. 12R01A0563"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a3"
+                android:onClick="ab3"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p3"
+                android:onClick="pr3"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="4. 12R01A0564"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a4"
+                android:onClick="ab4"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p4"
+                android:onClick="pr4"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="5. 12R01A0565"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a5"
+                android:onClick="ab5"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p5"
+                android:onClick="pr5"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="6. 12R01A0566"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a6"
+                android:onClick="ab6"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p6"
+                android:onClick="pr6"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="7. 12R01A0567"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a7"
+                android:onClick="ab7"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p7"
+                android:onClick="pr7"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="8. 12R01A0568"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a8"
+                android:onClick="ab8"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p8"
+                android:onClick="pr8"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="9. 12R01A0569"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a9"
+                android:onClick="ab9"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p9"
+                android:onClick="pr9"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="10. 12R01A0570"
+                android:textColor="#0a0000" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Absent"
+                android:id="@+id/a10"
+                android:onClick="ab10"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Present"
+                android:id="@+id/p10"
+                android:onClick="pr10"
+                android:background="#CFD8DC"
+                android:layout_margin="5dp" />
+
+        </TableRow>
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+        <!-- Row 2 with 3 columns -->
+
+
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>
